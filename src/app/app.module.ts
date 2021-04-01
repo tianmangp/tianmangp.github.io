@@ -15,12 +15,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { EventTimelineComponent } from './event-timeline/event-timeline.component';
 
 import { HomeComponent } from './public/home/home.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FollowAlmComponent } from './follow-alm/follow-alm.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    EventTimelineComponent
+    EventTimelineComponent,
+    FollowAlmComponent
   ],
   imports: [
     CommonModule,
@@ -30,7 +34,8 @@ import { HomeComponent } from './public/home/home.component';
     MatSidenavModule,
     MatIconModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

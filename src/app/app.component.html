@@ -6,6 +6,12 @@
 			<a routerLink="home" (click)="clickHandler()" routerLinkActive="active">Home</a>
 			<a routerLink="about" (click)="clickHandler()" routerLinkActive="active">About</a>
 			<a routerLink="contact" (click)="clickHandler()" routerLinkActive="active">Contact</a>
+			<a href="https://www.instagram.com/asianlivesmatters2/" target="blank">
+				<fa-icon [icon]="faInstagram" class="fa-icon"></fa-icon>
+			</a>
+			<a href="https://www.twitter.com/alivesmatter2/" target="blank">
+				<fa-icon [icon]="faTwitter" class="fa-icon"></fa-icon>
+			</a>
 		</nav>
 	</mat-sidenav>
 
@@ -13,16 +19,32 @@
 		<mat-toolbar color="primary">
 			<header>
 				<mat-icon (click)="sidenav.toggle()">menu</mat-icon>
-				<label>#STOP ASIAN HATE</label>
-				<nav>
+				<label routerLink="home" class="clickable">#STOP ASIAN HATE</label>
+				<nav class="nav-link">
 					<a routerLink="home" routerLinkActive="active">Home</a>
 					<a routerLink="about" routerLinkActive="active">About</a>
 					<a routerLink="contact" routerLinkActive="active">Contact</a>
+
+					<a href="https://www.instagram.com/asianlivesmatters2/" target="blank">
+						<fa-icon [icon]="faInstagram" class="fa-icon"></fa-icon>
+					</a>
+					<a href="https://www.twitter.com/alivesmatter2/" target="blank">
+						<fa-icon [icon]="faTwitter" class="fa-icon"></fa-icon>
+					</a>
 				</nav>
 			</header>
 		</mat-toolbar>
-		<section>
-			<router-outlet></router-outlet>
+		<!-- <section class="contentWrapper"> -->
+		<section style="min-height:75%">
+			<section class="content">
+				<router-outlet></router-outlet>
+			</section>
+
 		</section>
+		<footer class="footer">
+			<div class="x3">Asian Lives Matter Too</div>
+			<div>item1</div>
+			<div>item1</div>
+		</footer>
 	</mat-sidenav-content>
 </mat-sidenav-container>
