@@ -3,7 +3,7 @@
         <div class="col-md-12">
             <div class="section-wrapper">
                 <div class="event-schedule-timeline">
-                    
+
                     <div class="event-schedule-item"
                         *ngFor="let location of eventTimeline; index as i; let odd = odd; let even = even;">
                         <div class="esc-item" [ngClass]="{ left: odd, right: even }">
@@ -11,7 +11,11 @@
                                 <div class="section-content-inner">
                                     <div class="section-content">
                                         <a [href]="location.AddressLink" target="blank">
-                                            <p>{{location.AddressTitle}}</p>
+                                            <p>
+                                                <strong>
+                                                    {{location.AddressTitle}}
+                                                </strong>
+                                            </p>
                                         </a>
                                     </div>
                                     <div class="clearfix"></div>
@@ -22,7 +26,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
