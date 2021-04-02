@@ -17,6 +17,10 @@ import { EventTimelineComponent } from './event-timeline/event-timeline.componen
 import { HomeComponent } from './public/home/home.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FollowAlmComponent } from './follow-alm/follow-alm.component';
+import { ImgCarouselComponent } from './img-carousel/img-carousel.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { QuotesComponent } from './quotes/quotes.component';
+import { ShopAlmComponent } from './shop-alm/shop-alm.component';
 
 
 @NgModule({
@@ -24,7 +28,10 @@ import { FollowAlmComponent } from './follow-alm/follow-alm.component';
     AppComponent,
     HomeComponent,
     EventTimelineComponent,
-    FollowAlmComponent
+    FollowAlmComponent,
+    ImgCarouselComponent,
+    QuotesComponent,
+    ShopAlmComponent
   ],
   imports: [
     CommonModule,
@@ -35,7 +42,8 @@ import { FollowAlmComponent } from './follow-alm/follow-alm.component';
     MatIconModule,
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

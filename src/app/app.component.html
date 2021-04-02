@@ -19,9 +19,9 @@
 		<mat-toolbar color="primary">
 			<header>
 				<mat-icon (click)="sidenav.toggle()">menu</mat-icon>
-				<label routerLink="home" class="clickable">#STOP ASIAN HATE</label>
+				<label routerLink="" class="clickable">#STOP ASIAN HATE</label>
 				<nav class="nav-link">
-					<a routerLink="home" routerLinkActive="active">Home</a>
+					<a routerLink="" routerLinkActive="active">Home</a>
 					<a routerLink="about" routerLinkActive="active">About</a>
 					<a routerLink="contact" routerLinkActive="active">Contact</a>
 
@@ -43,8 +43,14 @@
 		</section>
 		<footer class="footer">
 			<div class="x3">Asian Lives Matter Too</div>
-			<div>item1</div>
-			<div>item1</div>
+			<div>
+				<a href="https://www.instagram.com/asianlivesmatters2/" target="blank">
+					<fa-icon [icon]="faInstagram" class="fa-icon x3 mr40 insColor change-font-color"></fa-icon>
+				</a>
+				<a href="https://www.twitter.com/alivesmatter2/" target="blank">
+					<fa-icon [icon]="faTwitter" class="fa-icon x3 twitterColor change-font-color"></fa-icon>
+				</a>
+			</div>
 		</footer>
 	</mat-sidenav-content>
 </mat-sidenav-container>

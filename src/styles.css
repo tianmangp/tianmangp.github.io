@@ -12,12 +12,12 @@ header {
 }
 
 .content {
-    margin: 0 auto -50px;
+    margin: 0 auto -100px;
 }
 
 .footer {
     background-image: linear-gradient(to right, rgb(0 0 0 / 87%), rgb(0 0 0 / 87%));
-    height: 100px;
+    height: 150px;
     z-index: 100;
     text-align: center;
     color: #fff;
@@ -48,7 +48,7 @@ header {
 }
 
 .mat-sidenav-container .mat-sidenav {
-    background-color: #3f51b5;
+    background-color: #44485a;
     padding: 10px;
     min-width: 150px;
 }
@@ -195,9 +195,9 @@ header {
     color: #974db6;
 }
 
-.change-font-color:hover{
+.change-font-color:hover {
     transition: all 1s;
-    color:rgb(66, 66, 172);
+    color: rgb(66, 66, 172);
 }
 
 .title::after {
@@ -219,6 +219,20 @@ header {
     background-position: 0 1.03em;
     background-repeat: repeat-x;
     background-size: 2px 6px;
+}
+
+.col-md-12 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.m20 {
+    margin-top: 20px;
+}
+
+.breakline {
+    border-bottom: 3px solid #555;
+    padding-bottom: 50px;
 }
 
 
