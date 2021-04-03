@@ -216,6 +216,10 @@ header {
     font-size: 55px;
 }
 
+.mt20 {
+    margin-top: 20px;
+}
+
 .mr40 {
     margin-right: 40px;
 }
@@ -311,5 +315,8 @@ header {
     }
     .colPadding {
         padding-left: 5%;
+    }
+    .panelTitle {
+        font-size: 33px;
     }
 }
