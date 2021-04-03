@@ -12,4 +12,8 @@ export class ShopAlmComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  openLink(){
+    let url = "https://my-store-11686238.preview.teespring.com/listing/hate-is-the-real-virus?product=46&variation=2739&size=423";
+    window.open(url, '_blank');
+  }
 }

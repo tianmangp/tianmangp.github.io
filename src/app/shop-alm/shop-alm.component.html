@@ -4,13 +4,16 @@
             SHOP ALM
         </span>
     </h2>
-    <p>shop-alm works!</p>
     <div class="flexContainer m20">
-        <div class="flexCol1">
-            <p>img</p>
-        </div>
-        <div class="flexCol2 colPadding">
-            description
+        <div style="display: inline-flex;">
+            <img src="./assets/img/tee.png" alt="HATE IS THE REAL VIRUS TEE" class="tee clickable" (click)="openLink()"> 
+            <p class="teeDescribe">
+               <span class="clickable" (click)="openLink()">Official Hate Is The Real Virus Tee <br/> <span style="padding-top: 5px;">$24.99</span> </span> 
+            </p>
+            
         </div>
     </div>
+    <p class="btn-right">
+        <a class="btn-highlight" href="https://my-store-11686238.preview.teespring.com/" target="_blank">SHOP ALL</a>
+    </p>
 </div>
