@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-md-12 py-3">
             <h2 class="panelTitle mt20">Recent Hate Crimes</h2>
-            <ngb-carousel *ngIf="crime_list" data-interval="false">
+            <ngb-carousel *ngIf="crime_list" data-interval="false" class="noOutline">
                 <ng-template ngbSlide *ngFor="let crime of crime_list">
                     <img [src]="crime.img" alt="Random slide" class="w-100">
                     <div class="carousel-caption">

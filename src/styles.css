@@ -216,6 +216,10 @@ header {
     font-size: 55px;
 }
 
+.noOutline{
+    outline: none;
+}
+
 .mt20 {
     margin-top: 20px;
 }
