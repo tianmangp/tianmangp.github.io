@@ -15,7 +15,8 @@ export class ImgCarouselComponent implements OnInit {
   public crime_list = [
     {
       crimeTitle: 'Xiao Zhen Xie, 75, was punched by a white man',
-      crimeDescription: 'Video footage of the aftermath of the attack against Xiao Zhen Xie, 75, prompted outrage across the United States.Credit...CBS San Francisco',
+      //crimeDescription: 'Video footage of the aftermath of the attack against Xiao Zhen Xie, 75, prompted outrage across the United States.Credit...CBS San Francisco',
+      crimeDescription: '',
       img: './assets/img/XiaoZhenXie.png'
     },
     {
@@ -24,8 +25,8 @@ export class ImgCarouselComponent implements OnInit {
       img: './assets/img/AtlantaShooting.png'
     },
     {
-      crimeTitle: 'This man assault on a 65-year-old Asian woman',
-      crimeDescription: 'Brandon Elliot was out on parole for killing his mother',
+      crimeTitle: 'Brandon Elliot assault on a 65-year-old Asian woman',
+      crimeDescription: '',
       img: './assets/img/BrandonElliot.png'
     }
   ]

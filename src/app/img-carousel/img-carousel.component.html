@@ -1,8 +1,8 @@
-<div class="container">
+<!-- <div class="container">
     <div class="row">
         <div class="col-md-12 py-3">
             <h2 class="panelTitle mt20">Recent Hate Crimes</h2>
-            <ngb-carousel *ngIf="crime_list" data-interval="false" class="noOutline">
+            <ngb-carousel *ngIf="crime_list" data-wrap="false" class="noOutline">
                 <ng-template ngbSlide *ngFor="let crime of crime_list">
                     <img [src]="crime.img" alt="Random slide" class="w-100">
                     <div class="carousel-caption">
@@ -13,4 +13,20 @@
             </ngb-carousel>
         </div>
     </div>
+</div>-->
+
+
+<div class="mb50">
+    <h2 class="panelTitle mt20">Recent Hate Crimes</h2>
+    <ngb-carousel *ngIf="crime_list" [interval]="6000" [animation]="false" class="noOutline">
+        <ng-template ngbSlide *ngFor="let crime of crime_list">
+          <div class="picsum-img-wrapper">
+            <img [src]="crime.img" alt="{{crime.crimeTitle}}" class="w-100">
+        </div>
+          <div class="carousel-caption">
+            <h3>{{ crime.crimeTitle }}</h3>
+            <p [innerText]="crime.crimeDescription"></p>
+          </div>
+        </ng-template>
+      </ngb-carousel>
 </div>
